@@ -135,9 +135,11 @@ article {
 .blog-duration-comment{
     display: flex;
     justify-content:space-between;
+    margin-right: -40px;
 }
 .blog-comment{
     padding-right: 65% ;
+    
 }
 .fa-message{
     padding-right: 5px;
