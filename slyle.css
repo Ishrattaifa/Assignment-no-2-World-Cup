@@ -61,6 +61,18 @@ button{
     height: 613px;
     margin-top: 33px; 
 }
+
+
+.ball{
+    width: 140px;
+    height: 90px;
+    position: relative; 
+    right: -615px;  
+    transition: transform 2s ease-out;
+}
+header:hover .ball{
+    transform: translate(-1250px, -100px);
+}
 /* main */
 
 .container{
@@ -94,12 +106,12 @@ button{
     color: black; 
 }
 .filled{
-    background-color: #147615;
+    background-color: #0fb212;
     color: white;  
 }
  
 /* Blog Style  */
-article{
+article {
     display: flex;
     gap: 40px;
     margin-right: 70px;
@@ -160,6 +172,67 @@ nav ul{
 }
 nav li{
     list-style: none;
-    margin-right: 50px;
+    margin-right: 50px;  
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.icon{
+    margin-right: 30px;
+    color: rgb(156, 149, 149);
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon:hover{
+    color: white;
+}
+
+/* upcoming matches */
+
+.side-box{
+    background-color: black;
+    width: 200px;
+    height: 312px;
+    border-radius: 10px;
+    padding: 0px 30px ;
+}
+
+.match{
+    display:grid;
+    grid-template-columns: repeat(3, .75fr);
+    grid-row-gap: 40px; 
+    padding-top: 20px;  
+} 
+.vs{
+    text-align: center;
+}
+.matches{
+    border: .5px solid lightgray;
+    border-style: solid ;
+    border-radius: 5px ;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
     
+}
+.match-info{
+    text-align: center;
+    font-size: 18px;
+}
+.date{
+    margin-top: -15px;
+    color: #4D4D4D;
+    font-size: 16px;
+
+}
+
+.all-matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -30px;
 }
